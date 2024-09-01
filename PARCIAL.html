@@ -1,0 +1,272 @@
+<html>
+<head>
+<title>EJERCICIO </title>
+
+<style>
+        body {
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            background-image: url('https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg');
+            background-size: cover;
+background-position:center;
+background-attachment:fixed;
+            
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: #FF00FF;
+        }
+
+        a:active {
+            color: #FF0000;
+        }
+
+        .marquee {
+            background-color: darkblue;
+
+            font-family: 'Lucida Calligraphy', cursive;
+            font-size: 2em;
+            color: #6cf2e4;
+            border: 6px double purple;
+box-shadow: 
+        0 0 5px #0ff, 
+        0 0 8px #0ff, 
+        0 0 13px #0ff, 
+        0 0 10px #f0f, 
+        0 0 20px #f0f;
+         }
+
+        .border {
+         border-radius: 0.3rem;
+    background-color:#F1eeee;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #6cf2e4;
+         
+        }
+
+.border:focus{
+border-color: #ccc;
+outline: none;
+box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+         
+}
+    </style>
+
+<center><u> <h1>ISAE Universidad</h1></u></center><br>
+<center><u><h2> La Chorrera</h2></u></center><br>
+<center><u><h2> LIC. Informatica</h2> </u></center><br>
+<marquee class="marquee" > <b><i><font  face="Lucida Calligraphy" > English Test #1 </font></i></br></marquee><br></br>
+
+<br>
+Name: <input class="border" type="text name:"  nombre" placeholder="name">
+Year:   <input class="border" type="text Year:"    placeholder="Year"><br><br>
+Teacher:   <input class="border" type="text Teacher:"    value="Riselys Guerra">
+Date:   <input class="border" type="text Date:"    placeholder="Date">
+Total Points:100
+  <h3><p> Fill in the blanks with the correct word----- value 25pts</h3><br>                                                        
+
+<script type="text/javascript">
+  function parcial( )
+ {
+  var pro=0;
+
+    if ((document.pregunta.nota1[0].checked == true)&&(document.pregunta.nota1[1].checked ==false)&&(document.pregunta[2].checked == false))
+    if(( document.pregunta.nota1[0].value="can")&&(document.pregunta.nota1[1].value="nato")&&(document.pregunta.nota1[2].value="rasa")) 
+
+    if((document.pregunta.nota1[0].checked==true))
+         {
+        pro=pro+10;
+         }
+    if ((document.pregunta.nota2[2].checked == true)&&(document.pregunta.nota2[0].checked ==false)&&(document.pregunta.nota2[1].checked == false))
+    if(( document.pregunta.nota2[2].value="rasa")&&(document.pregunta.nota2[1].value="nato")&&(document.pregunta.nota2[0].value="can"))  
+
+    if((document.pregunta.nota2[2].checked==true))
+         {
+        pro=pro+10;
+         }
+
+
+    if ((document.pregunta.nota3[1].checked == true)&&(document.pregunta.nota3[2].checked ==false)&&(document.pregunta.nota3[0].checked == false))
+    if(( document.pregunta.nota2[1].value="nato")&&(document.pregunta.nota2[2].value="rasa")&&(document.pregunta.nota2[0].value="can"))
+	
+
+    if((document.pregunta.nota3[1].checked==true))
+         {
+        pro=pro+10;
+         }
+
+
+    if ((document.pregunta.nota4[0].checked == true)&&(document.pregunta.nota4[1].checked ==false)&&(document.pregunta.nota4[2].checked == false))
+    if(( document.pregunta.nota4[0].value="can")&&(document.pregunta.nota4[1].value="nato")&&(document.pregunta.nota4[2].value="rasa"))
+       
+
+    if((document.pregunta.nota4[0].checked==true))
+         {
+        pro=pro+10;
+         }
+
+
+    if ((document.pregunta.nota5[0].checked == true)&&(document.pregunta.nota5[1].checked ==false)&&(document.pregunta.nota5[2].checked == false))
+    if(( document.pregunta.nota5[0].value="can")&&(document.pregunta.nota5[1].value="nato")&&(document.pregunta.nota5[2].value="rasa"))
+
+    if((document.pregunta.nota5[0].checked==true))
+         {
+        pro=pro+10;
+         }
+
+
+   if((document.pregunta.r1.value=="am"))
+        {
+        pro=pro+5;}
+   if((document.pregunta.r2.value=="plays")&&(document.pregunta.r3.value=="sings"))
+        {
+         pro=pro+5;}
+   if((document.pregunta.r4.value=="has"))
+        {
+        pro=pro+5;}
+   if((document.pregunta.r5.value=="like"))
+        {
+        pro=pro+5;}
+   if((document.pregunta.r6.value=="go"))
+        {
+        pro=pro+5;}
+             
+
+
+   if((document.pregunta.nota6[1].checked==true))
+         {
+        pro=pro+5;
+         }
+
+   if((document.pregunta.nota7[0].checked==true))
+         {
+        pro=pro+5;
+         }
+   if((document.pregunta.nota8[0].checked==true))
+         {
+        pro=pro+5;
+         }
+
+   if((document.pregunta.nota9[0].checked==true))
+         {
+        pro=pro+5;
+         }
+   if((document.pregunta.nota10[1].checked==true))
+         {
+        pro=pro+5;
+         }
+
+
+  document.pregunta.puntaje.value=(pro/100)*100;
+
+  if(document.pregunta.puntaje.value<=100&&document.pregunta.puntaje.value>=91)
+     document.pregunta.cal.value='A';
+  if(document.pregunta.puntaje.value<=91&&document.pregunta.puntaje.value>=80)
+     document.pregunta.cal.value='B';
+  if(document.pregunta.puntaje.value<=81&&document.pregunta.puntaje.value>=70)
+     document.pregunta.cal.value='C';
+  if(document.pregunta.puntaje.value<=71&&document.pregunta.puntaje.value>=60)
+     document.pregunta.cal.value='D';
+  if(document.pregunta.puntaje.value<=61&&document.pregunta.puntaje.value>=0)
+     document.pregunta.cal.value='F';
+   if(document.pregunta.puntaje.value==100)
+    alert("Felicidades Lo Lograstes");
+}
+</script>
+</head>
+<Body>
+
+<form name ="pregunta"  METHOD=POST>
+
+
+
+1.I  <input type="text"  class="border" name="r1" > (am / is / are) a student.<br> <br>
+2.John  <input type="text"  class="border" name="r2" > (plays / play) the guitar  and his sister <input type="text"  class="border" name="r3" > (sings / sing) along. <br> <br>
+3.She <input type="text"  class="border" name="r4" > (has / have) a cat.<br> <br>
+4. They <input type="text" class="border"  name="r5" > (like / likes) to play soccer.<br> <br>
+5.  We  <input type="text" class="border"  name="r6" >  (go / goes) to school every day.<br> <br>
+
+
+
+<h3> <p> Choose the best answer -----  value 50pts</h3><br>
+
+<h3> <i>  What time is it? <i> </h3>
+
+    <input type="checkbox" name="nota1" value="can ">  9 pm     <br>
+    <input type="checkbox" name="nota1" value="nato "> 8 miles <br>
+    <input type="checkbox" name="nota1" value="rasa">  50 degrees <br><br><br>
+
+
+<h3> <i> How old are you?<i> </h3>
+
+    <input type="checkbox" name="nota2" value="can "> Busy  <br>
+    <input type="checkbox" name="nota2" value="nato "> Tall <br>
+    <input type="checkbox" name="nota2" value="rasa"> 20 years old    <br><br><br>
+
+
+<h3> <i> Where do you live? <i> </h3>
+
+    <input type="checkbox" name="nota3" value="can "> Delicious <br>
+    <input type="checkbox" name="nota3" value="nato "> Panama City  <br>
+    <input type="checkbox" name="nota3" value="rasa">  Running  <br><br><br>
+
+<h3> <i> How much does this cost?<i> </h3>
+
+    <input type="checkbox" name="nota4" value="can "> $15    <br>
+    <input type="checkbox" name="nota4" value="nato "> Happy <br>
+    <input type="checkbox" name="nota4" value="rasa">  Chocolate  <br><br><br>
+
+<h3> <i> What is your favorite food? <i> </h3>
+
+    <input type="checkbox" name="nota5" value="can "> Pizza <br>
+    <input type="checkbox" name="nota5" value="nato "> Cold <br>
+    <input type="checkbox" name="nota5" value="rasa">  Monday <br><br><br>
+
+
+
+<h3> <p> True and False----- value 25pts </h3><br>
+
+<h3> <i> The moon is a planet <i> </h3>
+
+    <input type="radio" name="nota6" value="can "> True  <br>
+    <input type="radio" name="nota6" value="nato ">  False <br>
+
+<h3> <i> A triangle has three sides  <i> </h3>
+    <input type="radio" name="nota7" value="can "> True  <br>
+    <input type="radio" name="nota7" value="nato ">  False <br>
+
+<h3> <i> The Eiffel Tower is located in Paris, France<i> </h3>
+    <input type="radio" name="nota8" value="can "> True  <br>
+    <input type="radio" name="nota8" value="nato ">  False <br>
+
+<h3> <i> Bananas grow on trees <i> </h3>
+    <input type="radio" name="nota9" value="can "> True  <br>
+    <input type="radio" name="nota9" value="nato ">  False <br>
+
+<h3> <i> The Statue of Liberty is in London<i> </h3>
+    <input type="radio" name="nota10" value="can "> True  <br>
+    <input type="radio" name="nota10" value="nato ">  False <br><br><br>
+
+
+
+   
+
+
+
+
+PUNTUACI N:<input type="text"   name="puntaje" disabled="disabled"> <br>
+CALIFICACION:<input type="text"   name="cal" disabled="disabled"> <br>
+
+<input type="button" name="Resp" value="Respuesta" OnClick="parcial();">
+<input name="button" type="submit" value="limpiar"> <br>
+
+
+
+</form>
+</Body>
+</html>
