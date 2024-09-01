@@ -1,23 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>:::Aprende Ingles:::</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:::Aprende Inglés:::</title>
+    <style>
+        body {
+            background-color: #99CC99;
+        }
+    </style>
 </head>
-
-
-
-<frameset rows="*" cols="142,*" framespacing="0" frameborder="NO">
- 
-                        <frame me name="margenizquierdo" src="menu.html"   frameborder="no" scrolling="NO" noresize>
-                        <frame me name="margenderecho" src="LAS PLANTAS.html"  frameborder="no">
- 
-</FRAMESET>
-
-<noframes>
- 	<body bgcolor="#99CC99">
-	Esta p&aacute;gina tiene marcos, y tu navegador no los soporta 
-	</body>
-</noframes>
-
-
-
+<body>
+    <h1>Bienvenido a Aprende Inglés</h1>
+    <p>Esta página utiliza marcos para la navegación. Por favor, asegúrate de que tu navegador los soporte.</p>
+    <!-- Aquí es donde modernamente podrías usar <iframe> si realmente necesitas contenido embebido -->
+    <iframe src="menu.html" name="margenizquierdo" width="142" style="border:none; float:left;"></iframe>
+    <iframe src="inicio.html" name="margenderecho" style="border:none; width: calc(100% - 142px);"></iframe>
+</body>
 </html>
+
